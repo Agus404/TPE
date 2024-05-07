@@ -5,6 +5,10 @@
     
 }
 
+body{
+    min-height: 100vh;
+}
+
 @font-face {
     font-family: carmela;
     src: url(carmela/Carmela.woff);
@@ -25,19 +29,36 @@ li{
     padding: 12px 20px;
 }
 
+li > a {
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
-/* ul{
-    display: inline;
-} */
+.portada{
+    height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    background-color: antiquewhite;
+}
+
+.segunda{
+    height: 26vh;
+    background-color: #333;
+    color: #FFF;
+}
 
 .carmela {
     font-family: carmela;
-    font-size: 6em;
+    font-size: 12rem;
     font-weight: bold;
+    padding: 0px 24px;
 }
 
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding: 16px 24px;
   }
