@@ -7,9 +7,37 @@
 
 @font-face {
     font-family: carmela;
-    src: url(carmela/Carmela.ttf);
-  }
-
-body {
-    font-family: carmela;
+    src: url(carmela/Carmela.woff);
 }
+
+nav{
+    background-color: orange;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    padding: 12px 20px;
+}
+
+
+/* ul{
+    display: inline;
+} */
+
+.carmela {
+    font-family: carmela;
+    font-size: 6em;
+    font-weight: bold;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
