@@ -11,8 +11,13 @@
     
 }
 
+a {
+    color: inherit;
+}
+
 body{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -23,55 +28,75 @@ body{
 nav{
     background-color: #fffcf2ff;
     border-bottom: 2px solid #252422ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
 }
 
-ul{
+.logo{
+    padding: 12px 32px;
+    font-family: carmela;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+/* .logo:hover{
+    font-size: 2rem;
+} */
+
+.nav-list{
+    /* display: none; */
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    font-family: "Montserrat", sans-serif;
 }
 
-li{
-    padding: 12px 20px;
-    font-family: "Montserrat", sans-serif;
+.nav-element{
+    padding: 14px 32px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-li > a {
-    color: #000;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-li:hover{
-    background-color: #eb5e28ff;
+.nav-element:hover{
+    background-color: #252422ff;
     color: #FFF;
 }
 
-li:hover a {
-    color: #FFF;
+.nav-toggle{
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    background-color: teal;
+    height: 2rem;
+    aspect-ratio: 1;
+    z-index: 100;
+}
+
+.nav-open{
+    background-color: crimson;
 }
 
 .portada{
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     align-items: flex-end;
     background-color: #fffcf2ff;
 }
 
 .segunda{
-    height: 26vh;
+    min-height: 55vh;
     background-color: #252422ff;
     color: #FFF;
 }
 
-.carmela {
+.title {
     font-family: carmela;
     font-size: 12rem;
     font-weight: bold;
-    padding: 0px 24px;
+    padding: 54px 24px 0px;
 }
 
 .montserrat {
@@ -79,4 +104,34 @@ li:hover a {
     font-optical-sizing: auto;
     font-style: normal;
     padding: 16px 24px;
-  }
+}
+
+@media only screen and (max-width: 801px) {
+    .nav-list{
+        background-color: rgba(256, 256, 256, 0.8);
+        backdrop-filter: blur(0.3rem);
+        flex-direction: column;
+        /* align-items: center; */
+        font-size: 2rem;
+        position: fixed;
+        inset: 0 0 0 0;
+        padding: 10rem 2rem;
+        /* transform: translateX(100%); */
+    }
+
+    .hidden-mobile{
+        display: none;
+    }
+
+    .nav-element{
+        padding: 1em;
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .title{
+        font-size: 6rem;
+    }
+}
