@@ -293,6 +293,10 @@ nav{
     /* margin-left: 50px; */
     /* margin-right: 50px; */
 }
+.cuarta{
+    background-color: var(--color-fondo2);
+    width: 100%;
+}
 
 @media only screen and (max-width: 801px) {
     .nav-list{
