@@ -121,10 +121,11 @@ nav{
 }
 
 .nav-toggle{
+    padding: 0px 32px;
     display: none;
-    position: absolute;
-    top: 0.5rem;
-    right: 2rem;
+    /* position: absolute;
+    top: 0rem;
+    right: 2rem; */
     height: 2rem;
     aspect-ratio: 1;
     /* background-color: teal; */
@@ -330,24 +331,27 @@ nav{
     }
     /* ////////rubros en mobil/////////*/
     .rubros{
-        display: block;
+        /* display: block; */
+        flex-direction: column;
+        gap: 15px;
     }
     
     .rubros img{
         width: 100%;
         height: 50%;
         border: solid 4px var(--color-texto);
-        margin-left: 0px;
-        margin-bottom: 0px;
     }
-    .rubros p{
-        text-align: justify;
-        font-size: 15px;
+
+    .text-block, .proyecto .text-block{
+        font-size: 1rem;
         width: 100%;
-        margin-bottom: 20px;
-        margin-left: 0px;
     }
     
+    .text-block h3 {
+        font-size: 2rem;
+        padding-bottom: 10px;
+    }
+
     .separation-bands{
         min-height: 50px;
         display: flex;
@@ -357,4 +361,25 @@ nav{
         font-weight: 700;
         font-style: italic;
     }
+
+    /* PROYECTOS */
+
+    /* .tercera{
+        align-items: flex-start;
+    } */
+
+    .proyecto{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .proyecto img{
+        width: 100%;
+        height: 50%;
+    }
+
+    /* .proyecto .text-block{
+        font-size: 1rem;
+        width: 100%;
+    } */
 }
