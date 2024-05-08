@@ -136,6 +136,7 @@ nav{
 }
 
 .segunda{
+    
     min-height: 55vh;
     background-color: var(--color-fondo2);
     color: var(--color-texto);
@@ -146,6 +147,72 @@ nav{
     font-optical-sizing: auto;
     font-style: normal;
     padding: 16px 24px;
+}
+.rubros_1{
+    display: flex;
+    border: solid 1px #000;
+    
+}
+.rubros_1 img{
+    width: 500px;
+    height: 300px ;
+    border: solid 4px #000;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.rubros_1 p{
+    font-family: "Montserrat", sans-serif ;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.rubros_2{
+    display: flex;
+    border: solid 1px #000;
+}
+.rubros_2 img{
+    width: 500px;
+    height: 300px ;
+    border: solid 4px #000;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+.rubros_2 p{
+    font-family: "Montserrat", sans-serif ;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: justify;
+    font-size: 25px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-orientation: upright;
+}
+.rubros_3{
+    display: flex;
+    border: solid 1px #000;
+}
+.rubros_3 img{
+    width: 500px;
+    height: 300px ;
+    border: solid 4px #000;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.rubros_3 p{
+    font-family: "Montserrat", sans-serif ;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 25px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 /* @media (prefers-color-scheme: dark){
