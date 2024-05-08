@@ -31,6 +31,9 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     color: var(--color-texto);
+    font-family: "Montserrat", sans-serif ;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 @font-face {
@@ -48,6 +51,7 @@ body{
     font-size: 12rem;
     font-weight: bold;
     padding: 54px 24px 0px;
+    text-transform: uppercase;
 }
 
 nav{
@@ -71,7 +75,6 @@ nav{
     /* display: none; */
     list-style: none;
     display: flex;
-    font-family: "Montserrat", sans-serif;
 }
 
 .nav-element{
@@ -135,13 +138,6 @@ nav{
     background-color: var(--color-fondo);
 }
 
-.montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    padding: 16px 24px;
-}
-
 .segunda{
     min-height: 55vh;
     background-color: var(--color-fondo2);
@@ -171,14 +167,22 @@ nav{
     margin-bottom: 50px;
 }
 .rubros p{
-    font-family: "Montserrat", sans-serif ;
-    font-optical-sizing: auto;
-    font-style: normal;
     text-align: justify;
     font-size: 25px;
     width: 600px;
     margin-top: 50px;
     margin-left: 50px;
+}
+
+.separation-bands{
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-kerning: none;
 }
 
 @media only screen and (max-width: 801px) {
@@ -200,10 +204,6 @@ nav{
         right: 0;
         bottom: 0;
     }
-
-    /* .hidden-mobile{
-        display: none; 
-    } */
 
     .nav-open{
         transform: translateX(0%);
