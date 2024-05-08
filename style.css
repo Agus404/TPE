@@ -182,6 +182,57 @@ nav{
     text-transform: uppercase;
     font-weight: 700;
     font-style: italic;
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+.tercera{
+    min-height: 55vh;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.proyectos-title{
+    margin: 0px;
+    padding: 0px;
+    transform: rotate(90deg);
+    background-color: var(--color-fondo);
+    height: auto;
+    /* position: absolute;
+    right: 0; */
+    text-transform: uppercase;
+    font-size: 10rem;
+}
+
+.proyectos-container{
+    background-color: var(--color-fondo);
+    min-height: 55vh;
+    width: 75vw;
+
+}
+
+.proyecto{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+
+.proyecto img{
+    width: 500px;
+    height: 300px ;
+    border: solid 4px var(--color-texto);
+}
+
+.proyecto p{
+    text-align: justify;
+    font-size: 25px;
+    width: 600px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 @media only screen and (max-width: 801px) {
