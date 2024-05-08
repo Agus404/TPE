@@ -150,13 +150,13 @@ nav{
 }
 .rubros_1{
     display: flex;
-    border: solid 1px #000;
+    border: solid 1px var(--color-texto);
     
 }
 .rubros_1 img{
     width: 500px;
     height: 300px ;
-    border: solid 4px #000;
+    border: solid 4px var(--color-texto);
     margin-top: 50px;
     margin-left: 100px;
     margin-bottom: 50px;
@@ -172,12 +172,12 @@ nav{
 }
 .rubros_2{
     display: flex;
-    border: solid 1px #000;
+    border: solid 1px var(--color-texto);
 }
 .rubros_2 img{
     width: 500px;
     height: 300px ;
-    border: solid 4px #000;
+    border: solid 4px var(--color-texto);
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 200px;
@@ -195,12 +195,12 @@ nav{
 }
 .rubros_3{
     display: flex;
-    border: solid 1px #000;
+    border: solid 1px var(--color-texto);
 }
 .rubros_3 img{
     width: 500px;
     height: 300px ;
-    border: solid 4px #000;
+    border: solid 4px var(--color-texto);
     margin-top: 50px;
     margin-left: 100px;
     margin-bottom: 50px;
