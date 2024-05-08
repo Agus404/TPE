@@ -69,11 +69,21 @@ nav{
     position: absolute;
     top: 0.5rem;
     right: 2rem;
-    background-color: teal;
+    /* background-color: teal; */
     height: 2rem;
     aspect-ratio: 1;
+    background-color: inherit;
+    border: none;
     z-index: 100;
 }
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
 
 .portada{
     min-height: 70vh;
@@ -86,7 +96,7 @@ nav{
     
     min-height: 55vh;
     background-color: #ccc5b9ff;
-    color: #000;
+    color: #252422ff;
 }
 
 .title {
@@ -186,10 +196,6 @@ nav{
     /* .hidden-mobile{
         display: none; 
     } */
-
-    button.nav-open{
-        background-color: crimson;
-    }
 
     .nav-open{
         transform: translateX(0%);
