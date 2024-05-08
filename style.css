@@ -182,7 +182,6 @@ nav{
     text-transform: uppercase;
     font-weight: 700;
     font-style: italic;
-    font-kerning: none;
 }
 
 @media only screen and (max-width: 801px) {
