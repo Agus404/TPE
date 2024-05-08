@@ -299,7 +299,7 @@ nav{
         background-color: var(--color-blur);
         backdrop-filter: blur(0.3rem);
         flex-direction: column;
-        /* align-items: center; */
+        align-items: center;
         font-size: 2rem;
         position: fixed;
         inset: 0 0 0 0;
@@ -307,19 +307,29 @@ nav{
         transform: translateX(100%);
         transition: all 350ms ease-out;
     }
-
-    .toggle-theme{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
+    
+    /* #btn-theme{
+        margin: 0;
+        padding: 0;
+    } */
+    
     .nav-open{
         transform: translateX(0%);
     }
-
+    
     .nav-element{
         padding: 1em;
+    }
+    
+    .toggle-theme{
+        position: absolute;
+        /* right: 0; */
+        bottom: 0;
+        padding: 1em 0;
+    }
+
+    #btn-theme .material-symbols-outlined{
+        font-size: 32px;
     }
 
     .nav-toggle{
