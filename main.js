@@ -1,7 +1,6 @@
 "use strict"
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // TEMA OSCURO / TEMA CLARO
+    // TEMA OSCURO
     const storageTheme = localStorage.getItem('localTheme');
     const systemColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     const newTheme = storageTheme ?? systemColorScheme;
@@ -21,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         root.setAttribute("data-theme", theme);
         localStorage.setItem('localTheme', theme);
     }
+
 
     //OCULTAR NAV EN MOBILE
     const navList = document.querySelector(".nav-list");
