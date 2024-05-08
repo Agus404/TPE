@@ -271,4 +271,40 @@ nav{
     .title{
         font-size: 4rem;
     }
+    /* ////////rubros en mobil/////////*/
+    .rubros{
+        display: block;
+        width: 100%;
+        border-bottom: solid 1px var(--color-texto);
+    }
+    
+    .flex-reversed{
+        flex-direction: row-reverse;
+    }
+    
+    .rubros img{
+        width: 100%;
+        height: 50% ;
+        border: solid 4px var(--color-texto);
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+    .rubros p{
+        text-align: justify;
+        font-size: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    
+    .separation-bands{
+        min-height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-style: italic;
+    }
 }
