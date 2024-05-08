@@ -152,11 +152,13 @@ nav{
 .rubros{
     display: flex;
     width: 100%;
-    border-bottom: solid 1px var(--color-texto);
+    /* border-bottom: solid 1px var(--color-texto); */
 }
 
 .flex-reversed{
     flex-direction: row-reverse;
+    border-bottom: solid 1px var(--color-texto);
+    border-top: solid 1px var(--color-texto);
 }
 
 .rubros img{
