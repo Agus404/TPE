@@ -135,25 +135,34 @@ nav{
     background-color: var(--color-fondo);
 }
 
-.segunda{
-    
-    min-height: 55vh;
-    background-color: var(--color-fondo2);
-    color: var(--color-texto);
-}
-
 .montserrat {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     padding: 16px 24px;
 }
-.rubros_1{
+
+.segunda{
+    min-height: 55vh;
+    background-color: var(--color-fondo2);
+    color: var(--color-texto);
     display: flex;
-    border: solid 1px var(--color-texto);
-    
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
 }
-.rubros_1 img{
+
+.rubros{
+    display: flex;
+    width: 100%;
+    border-bottom: solid 1px var(--color-texto);
+}
+
+.flex-reversed{
+    flex-direction: row-reverse;
+}
+
+.rubros img{
     width: 500px;
     height: 300px ;
     border: solid 4px var(--color-texto);
@@ -161,28 +170,7 @@ nav{
     margin-left: 100px;
     margin-bottom: 50px;
 }
-.rubros_1 p{
-    font-family: "Montserrat", sans-serif ;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 25px;
-    width: 600px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.rubros_2{
-    display: flex;
-    border: solid 1px var(--color-texto);
-}
-.rubros_2 img{
-    width: 500px;
-    height: 300px ;
-    border: solid 4px var(--color-texto);
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 200px;
-}
-.rubros_2 p{
+.rubros p{
     font-family: "Montserrat", sans-serif ;
     font-optical-sizing: auto;
     font-style: normal;
@@ -190,41 +178,8 @@ nav{
     font-size: 25px;
     width: 600px;
     margin-top: 50px;
-    margin-left: 100px;
-    text-orientation: upright;
-}
-.rubros_3{
-    display: flex;
-    border: solid 1px var(--color-texto);
-}
-.rubros_3 img{
-    width: 500px;
-    height: 300px ;
-    border: solid 4px var(--color-texto);
-    margin-top: 50px;
-    margin-left: 100px;
-    margin-bottom: 50px;
-}
-.rubros_3 p{
-    font-family: "Montserrat", sans-serif ;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 25px;
-    width: 600px;
-    margin-top: 50px;
     margin-left: 50px;
 }
-
-/* @media (prefers-color-scheme: dark){
-    :root{
-        --color-fondo: #121212;
-        --color-fondo2: #282828;
-        --color-blur: rgba(0, 0, 0, 0.8);
-        --color-texto: #fffcf2ff;
-        --color-acento: #eb5e28ff;
-        color-scheme: dark;
-    }
-} */
 
 @media only screen and (max-width: 801px) {
     .nav-list{
