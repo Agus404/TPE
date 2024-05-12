@@ -118,10 +118,10 @@ nav {
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 #btn-theme .material-symbols-outlined {
@@ -186,6 +186,7 @@ nav {
 .text-block h3 {
     font-size: 2rem;
     padding-bottom: 10px;
+    text-align: left;
 }
 
 .separation-bands {
@@ -235,6 +236,7 @@ nav {
     justify-content: center;
     overflow-x: hidden;
     padding-top: 50px;
+    position: relative;
 }
 
 .proyectos-title {
@@ -247,6 +249,7 @@ nav {
     right: -20rem;
     text-transform: uppercase;
     font-size: 10rem;
+    
 }
 
 .proyecto {
@@ -267,112 +270,104 @@ nav {
 
 .proyecto .text-block {
     width: 800px;
+    max-width: 85vw;
     text-shadow: 1px 1px 2px var(--color-fondo);
 }
 
 .cuarta {
     background-color: var(--color-fondo2);
-    width: 100%;
-    height: 1000px;
     display: flex;
-    justify-content: space-around;
-
+    flex-direction: column;
+    align-items: center;
 }
 
-.boton_about1 {
-    display: none;
+.team-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    padding: 50px 0;
+    gap: 50px;
 }
 
-.cuarta img {
+.team-container .miembro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miembro img {
     background-color: #fffcf2ff;
     border: solid 2px var(--color-texto);
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 70px;
-    margin-left: 60px;
 
 }
 
-.cuarta h1 {
-    border-radius: 20px;
-    border: solid 1px var(--color-texto);
-    margin-right: 180px;
-    margin-left: 110px;
-    margin-top: 20px;
+.miembro h1 {
     color: var(--color-texto);
-    background-color: var(--color-fondo);
-    padding: 0px 30px
-}
-
-.cuarta h2 {
+    font-size: 45px;
+    text-transform: capitalize;
     text-align: center;
-    border-radius: 20px;
-    border: solid 1px var(--color-texto);
-    background-color: var(--color-fondo);
-    padding: 10px;
-    margin: 15px;
 }
 
-.about_buton2::after {}
-
-.about_buton2 {
-    margin-top: 200px;
-    margin-left: -550px;
+.miembro p {
+    text-align: center;
+    font-size: 25px;
 }
 
-.boton_about2 {
-    position: absolute;
-    overflow: hidden;
+.btn-about {
+    position: relative;
+    margin-bottom: 50px;
+    width: 90%;
+    max-width: 400px;
+    height: 70px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
     border: solid 3px var(--color-texto);
-    border-radius: 0px;
-    font-size: 40px;
-    padding: 20px 200px;
-    z-index: 1;
-
-
+    background-color: var(--color-fondo2);
+    padding: 0;
+    overflow: hidden;
+    z-index: 0;
 }
 
-.boton_about2::before {
-    content: "";
+.btn-about::before {
     position: absolute;
-    width: 575px;
-    height: 90px;
-    margin-left: -200px;
-    margin-top: -113px;
-    background-color: var(--color-fondo);
-    border-radius: 50%;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: var(--color-acento);
     transition: all 0.6s ease;
+    height: 0%;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn-about:hover::before {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
     z-index: -1;
 }
 
-.boton_about2:hover::before {
-    margin-top: -21px;
-    border-radius: 0px;
-
-}
-.quinta{
-    background-color: var(--color-fondo);
+.quinta {
+    background-image: url(img/contactos\ tema\ oscuro.png);
+    background-repeat: no-repeat;
     width: 100%;
     height: 600px;
     display: flex;
 }
-.flecha_1{
-    
+
+
+
+.buton_contactos {
+    transform: rotateZ(10deg);
     width: 500px;
-    height: 300px;
+
 }
-.flecha_2{
-    width: 500px;
-    height: 300px;
-    padding-top: 300px;
-    padding-left: 500px;
-}
-.buton_contactos{
-    transform: rotateZ(14deg);
-    width: 500px;
-    
-}
+
 .btn {
     border: solid 3px var(--color-texto);
     display: block;
@@ -383,131 +378,120 @@ nav {
     text-align: center;
     line-height: 50px;
     text-decoration: none;
-    margin: 265px auto 0;
-    padding: 5px 90px;
+    margin-top: 120px ;
+    margin-left: 870px;
+    padding: 5px 150px;
     font-weight: bold;
     -webkit-animation: btnWiggle 5s infinite;
     -moz-animation: btnWiggle 5s infinite;
     -o-animation: btnWiggle 5s infinite;
     animation: btnWiggle 5s infinite;
-  }
-  
-  .subtext {
+}
+
+.subtext {
     font-family: 'Droid Sans Mono', sans-serif;
     font-size: 14px;
     letter-spacing: .05em;
     text-align: center;
-  }
-  .footer{
+}
+
+.btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: var(--color-acento);
+    transition: all 0.6s ease;
+    height: 0%;
+    border-radius: 0 0 50% 50%;
+}
+.btn:hover::before {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    z-index: -1;
+}
+
+
+.footer {
     width: 100%;
     height: 1000px;
     background-color: var(--color-fondo2);
-  }
-  
-  /* animation */
-  @-webkit-keyframes btnWiggle {
-      0% {-webkit-transform: rotate(0deg);}
-      2% {-webkit-transform: rotate(-1deg);}
-      3.5% {-webkit-transform: rotate(1deg);}
-      5% {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(0deg);}
-  }
-  @-o-keyframes btnWiggle {
-      0% {-webkit-transform: rotate(0deg);}
-      2% {-webkit-transform: rotate(-1deg);}
-      3.5% {-webkit-transform: rotate(1deg);}
-      5% {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(0deg);}
-  }
-  @keyframes btnWiggle {
-      0% {-webkit-transform: rotate(0deg);}
-      2% {-webkit-transform: rotate(-1deg);}
-      3.5% {-webkit-transform: rotate(1deg);}
-      5% {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(0deg);}
-  }
-
-.quinta{
-    background-color: var(--color-fondo);
-    width: 100%;
-    height: 600px;
-    display: flex;
 }
-.flecha_1{
-    width: 500px;
-    height: 300px;
-}
-.flecha_2{
-    width: 500px;
-    height: 300px;
-    padding-top: 300px;
-    padding-left: 500px;
-}
-.buton_contactos{
-    transform: rotateZ(14deg);
-    width: 500px;
 
+/* animation */
+@-webkit-keyframes btnWiggle {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    2% {
+        -webkit-transform: rotate(-1deg);
+    }
+
+    3.5% {
+        -webkit-transform: rotate(1deg);
+    }
+
+    5% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
 }
-.btn {
-    border: solid 3px var(--color-texto);
-    display: block;
-    width: 200px;
-    height: 50px;
-    font-size: 30px;
-    font-style: normal;
-    text-align: center;
-    line-height: 50px;
-    text-decoration: none;
-    margin: 265px auto 0;
-    padding: 5px 90px;
-    font-weight: bold;
-    -webkit-animation: btnWiggle 5s infinite;
-    -moz-animation: btnWiggle 5s infinite;
-    -o-animation: btnWiggle 5s infinite;
-    animation: btnWiggle 5s infinite;
-  }
 
-  .subtext {
-    font-family: 'Droid Sans Mono', sans-serif;
-    font-size: 14px;
-    letter-spacing: .05em;
-    text-align: center;
-  }
-  .footer{
-    width: 100%;
-    height: 1000px;
-    background-color: var(--color-fondo2);
-  }
+@-o-keyframes btnWiggle {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
 
-  /* animation */
-  @-webkit-keyframes btnWiggle {
-      0% {-webkit-transform: rotate(0deg);}
-      2% {-webkit-transform: rotate(-1deg);}
-      3.5% {-webkit-transform: rotate(1deg);}
-      5% {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(0deg);}
-  }
-  @-o-keyframes btnWiggle {
-      0% {-webkit-transform: rotate(0deg);}
-      2% {-webkit-transform: rotate(-1deg);}
-      3.5% {-webkit-transform: rotate(1deg);}
-      5% {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(0deg);}
-  }
-  @keyframes btnWiggle {
-      0% {-webkit-transform: rotate(0deg);}
-      2% {-webkit-transform: rotate(-1deg);}
-      3.5% {-webkit-transform: rotate(1deg);}
-      5% {-webkit-transform: rotate(0deg);}
-      100% {-webkit-transform: rotate(0deg);}
-  }
+    2% {
+        -webkit-transform: rotate(-1deg);
+    }
+
+    3.5% {
+        -webkit-transform: rotate(1deg);
+    }
+
+    5% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+@keyframes btnWiggle {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    2% {
+        -webkit-transform: rotate(-1deg);
+    }
+
+    3.5% {
+        -webkit-transform: rotate(1deg);
+    }
+
+    5% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
 
 @media only screen and (min-width: 801px) {
 
-    .nav-list{
+    .nav-list {
         flex-direction: row;
         transform: translateX(0%);
-        background-color: inherit;
+        background-color: #0000;
         backdrop-filter: none;
         align-items: flex-start;
         inset: auto;
@@ -515,12 +499,12 @@ nav {
         position: relative;
         padding: 0;
     }
-    
+
     .nav-element {
         padding: 18px 32px;
     }
 
-    .toggle-theme{
+    .toggle-theme {
         padding: 0;
     }
 
@@ -536,7 +520,9 @@ nav {
         font-size: 12rem;
     }
 
-    /* ////////rubros en mobil/////////*/
+
+    /* RUBROS */
+
     .rubros {
         flex-direction: row;
         gap: 50px;
@@ -578,51 +564,26 @@ nav {
     /* PROYECTOS */
 
     .proyecto {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        gap: 50px;
     }
 
     .proyecto img {
-        width: 100%;
-        height: 50%;
+        width: 500px;
+        height: 300px;
     }
 
-    /* .proyecto .text-block{
-        font-size: 1rem;
-        width: 100%;
-    } */
-    .cuarta {
-
-        width: 100%;
-        height: 100%;
-        display: block;
-
+    .team-container {
+        flex-direction: row;
+        gap: 25px;
     }
 
-    .boton_about2 {
-        visibility: visible;
-        border: solid 3px var(--color-texto);
+    .team-container .miembro {
+        gap: 15px;
     }
 
-    .cuarta img {
-        width: 100px;
-        height: 100px;
-        margin-top: 10px;
-        margin-left: 130px;
-
-    }
-
-    .cuarta h1 {
-        text-align: center;
-        margin: 20px 30px;
-        padding: 5px 5px;
-    }
-
-    .cuarta h2 {
-        display: none;
-    }
-
-    .boton_about2 {
-        display: none;
+    .miembro img {
+        width: 300px;
+        height: 300px;
     }
 }
