@@ -76,7 +76,7 @@ nav {
     font-size: 2rem;
 }
 
-ul{
+ul {
     list-style: none;
     display: flex;
 }
@@ -244,7 +244,8 @@ ul{
     position: relative;
 }
 
-.proyectos-title {
+/* .proyectos-title {
+    display: none;
     margin: 0px;
     padding: 0px;
     transform: rotate(90deg);
@@ -254,7 +255,13 @@ ul{
     right: -20rem;
     text-transform: uppercase;
     font-size: 10rem;
-    
+} */
+
+.proyectos-title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 75px;
 }
 
 .proyecto {
@@ -371,7 +378,7 @@ ul{
     position: relative;
 }
 
-.quinta h2{
+.quinta h2 {
     font-family: moxa;
     position: absolute;
     top: 5%;
@@ -382,7 +389,7 @@ ul{
     color: var(--color-texto);
 }
 
-.btn-contact{
+.btn-contact {
     width: 90%;
     max-width: 400px;
     height: 70px;
@@ -475,17 +482,17 @@ ul{
     align-items: center;
     padding: 0px 5%;
     /* font-weight: 600; */
-    font-size: 24px;
+    font-size: 16px;
 }
 
-.icon{
+.icon {
     padding: 0px 12px;
     width: 24px;
     height: 24px;
     fill: var(--color-texto);
 }
 
-.icon:hover{
+.icon:hover {
     fill: var(--color-acento);
 }
 
@@ -567,7 +574,55 @@ ul{
     }
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 800px) {
+    /* RUBROS */
+
+    .rubros {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .flex-reversed {
+        flex-direction: row-reverse;
+        border-bottom: solid 1px var(--color-texto);
+        border-top: solid 1px var(--color-texto);
+    }
+
+    .rubros img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .text-block,
+    .proyecto .text-block {
+        font-size: 25px;
+        width: 40%;
+        max-width: 600px;
+    }
+
+    .proyecto .text-block {
+        max-width: none;
+    }
+
+    .text-block h3 {
+        font-size: 45px;
+        padding-bottom: 20px;
+    }
+
+    /* PROYECTOS */
+
+    .proyecto {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .proyecto img {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
 
     .nav-list {
         flex-direction: row;
@@ -602,56 +657,14 @@ ul{
     }
 
 
-    /* RUBROS */
-
-    .rubros {
-        flex-direction: row;
-        gap: 50px;
-    }
-
-    .flex-reversed {
-        flex-direction: row-reverse;
-        border-bottom: solid 1px var(--color-texto);
-        border-top: solid 1px var(--color-texto);
-    }
-
-    .rubros img {
-        width: 500px;
-        height: 300px;
-    }
-
-    .text-block,
-    .proyecto .text-block {
-        font-size: 25px;
-        width: 600px;
-    }
-
-    .text-block h3 {
-        font-size: 45px;
-        padding-bottom: 20px;
-    }
-
-    .separation-bands {
-        min-height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .proyectos-title {
+        transform: rotate(90deg);
+        background-color: var(--color-fondo);
+        /* max-height: 10rem; */
+        position: absolute;
+        right: -420px;
         text-transform: uppercase;
-        font-weight: 700;
-        font-style: italic;
-    }
-
-
-    /* PROYECTOS */
-
-    .proyecto {
-        flex-direction: row;
-        gap: 50px;
-    }
-
-    .proyecto img {
-        width: 500px;
-        height: 300px;
+        font-size: 160px;
     }
 
     .team-container {
@@ -666,5 +679,9 @@ ul{
     .miembro img {
         width: 300px;
         height: 300px;
+    }
+
+    .footer {
+        font-size: 24px;
     }
 }
