@@ -181,22 +181,25 @@ ul {
 
 .separation-bands {
     min-height: 50px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     text-transform: uppercase;
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: 32px;
     font-weight: 800;
     font-style: italic;
     background-color: var(--color-texto);
     color: var(--color-fondo);
-    text-wrap: nowrap;
-    overflow-x: hidden;
+    /* text-wrap: nowrap; */
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .band {
     animation: linear 10s infinite alternate slide;
+    width: 200%;
 }
 
 .band2 {
@@ -205,15 +208,16 @@ ul {
     border-top: solid 2px var(--color-fondo); */
     background-color: var(--color-fondo);
     color: var(--color-texto);
+    width: 200%;
 }
 
 @keyframes slide {
     from {
-        transform: translateX(-25vw);
+        transform: translateX(0vw);
     }
 
     to {
-        transform: translateX(25vw);
+        transform: translateX(-50vw);
     }
 }
 
@@ -312,6 +316,7 @@ ul {
     font-weight: bold;
     text-transform: uppercase;
     border: solid 3px var(--color-texto);
+    color: var(--color-texto);
     background-color: var(--color-fondo2);
     padding: 0;
     overflow: hidden;
@@ -369,6 +374,7 @@ ul {
     font-weight: bold;
     text-transform: uppercase;
     border: solid 3px var(--color-texto);
+    color: var(--color-texto);
     background-color: var(--color-fondo);
     padding: 0;
     overflow: hidden;
