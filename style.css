@@ -44,6 +44,7 @@ a {
 }
 
 nav {
+    padding-top: 8px;
     background-color: var(--color-fondo);
     border-bottom: 2px solid var(--color-texto);
     display: flex;
@@ -85,7 +86,7 @@ ul {
 }
 
 .nav-element {
-    padding: 1em;
+    padding: 1.13em;
     font-weight: 500;
     text-transform: uppercase;
 }
@@ -473,6 +474,10 @@ td{
 
 @media only screen and (min-width: 800px) {
 
+    nav{
+        padding-top: 0;
+    }
+
     .nav-list {
         flex-direction: row;
         transform: translateX(0%);
@@ -486,7 +491,11 @@ td{
     }
 
     .nav-element {
-        padding: 18px 32px;
+        /* padding: 0; */
+    }
+    
+    .nav-element a{
+        padding: 18px;
     }
 
     .toggle-theme {
