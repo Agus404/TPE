@@ -585,9 +585,9 @@ td{
     }
 
     .team-container {
-        width: 70%;
+        width: 85%;
         flex-direction: row;
-        gap: 25px;
+        gap: 50px 100px;
     }
 
     .team-container .miembro {
