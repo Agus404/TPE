@@ -1,0 +1,334 @@
+:root[data-theme="light"] {
+    --color-fondo: #fffcf2ff;
+    --color-fondo2: #ccc5b9ff;
+    --color-blur: rgba(256, 256, 256, 0.8);
+    --color-texto: #252422ff;
+    --color-acento: #eb5e28ff;
+    --img-contacto: url(img/contact-light.png);
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --color-fondo: #121212;
+    --color-fondo2: #282828;
+    --color-blur: rgba(0, 0, 0, 0.8);
+    --color-texto: #fffcf2ff;
+    --color-acento: #eb5e28ff;
+    --img-contacto: url(img/contact-dark.png);
+    color-scheme: dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: var(--color-texto);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: moxa;
+    src: url(moxa_bestine/MOXA\ Bestine.ttf);
+}
+
+a {
+    color: inherit;
+}
+
+nav {
+    background-color: var(--color-fondo);
+    border-bottom: 2px solid var(--color-texto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.logo {
+    padding: 0px 32px;
+    font-family: moxa;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list {
+    /* display: none; */
+    background-color: var(--color-blur);
+    backdrop-filter: blur(0.3rem);
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    position: fixed;
+    inset: 0 0 0 0;
+    padding: 10rem 2rem;
+    transform: translateX(100%);
+    transition: all 350ms ease-out;
+}
+
+.nav-open {
+    transform: translateX(0%);
+}
+
+.nav-element {
+    padding: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.nav-element:hover {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+.toggle-theme {
+    padding: 1em 0;
+}
+
+#btn-theme {
+    padding: 14px 32px;
+    background-color: #0000;
+    color: inherit;
+    border: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+#btn-theme .material-symbols-outlined {
+    font-size: 32px;
+}
+
+.nav-toggle {
+    display: block;
+    padding: 0px 32px;
+    height: 2rem;
+    aspect-ratio: 1;
+    background-color: #0000;
+    border: none;
+    z-index: 100;
+    color: var(--color-texto);
+}
+.section_form{
+    background-color: var(--color-fondo);
+    width: 100%;
+    height: 743px;
+    padding-top: 60px;
+}
+.form_fondo{
+    background-color: var(--color-fondo2);
+    width: 90%;
+    height: 2000px;
+    margin-left: 20px;
+}
+.form_fondo h1{
+    color: var(--color-texto);
+    text-align: center;
+   text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.form_fondo h2{
+    color:var(--color-texto);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px; 
+}
+.form_fondo h3{
+    color:var(--color-texto);
+    text-align: center;
+    padding-top: 10px; 
+}
+.form_fondo p{
+    color:var(--color-texto);
+    text-align:center;
+    padding-top: 10px;
+    font-size: 15px;
+}
+/* .footer {
+    height: 40px;
+    background-color: var(--color-fondo2);
+    border-top: 2px solid var(--color-texto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    font-size: 16px;
+} */
+
+.icon {
+    padding: 0px 12px;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-texto);
+}
+
+.icon:hover {
+    fill: var(--color-acento);
+}
+.conteiner{
+    margin:0 auto;
+    padding: 35px 30px;
+}
+.form_box{
+    height: 250px;
+    border: solid 1px var(--color-texto);
+    background-color: var(--color-fondo);
+    margin-top: 20px;
+    
+}
+.form_box p{
+    font-size: 20px;
+}
+.form_box input{
+    margin-left: 20%;
+    border: solid 5px var(--color-texto);
+    padding: 10px;
+}
+.form_box input:focus{
+    border: solid 7px var(--color-acento);
+}
+.paso_1 label{
+    display: block;
+    color: var(--color-texto);
+    font-family: "Montserrat", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.preview{
+    width: 182px;
+    height: 45px;
+    color: var(--color-texto);
+    border: dashed 1px var(--color-texto);
+    background-color: var(--color-fondo2);
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    
+
+}
+.boton_submit{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn-submit{
+    
+    width: 150px;
+    height: 75px;
+    border: solid 1px var(--color-texto);
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.btn-submit::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: var(--color-acento);
+    transition: all 0.6s ease;
+    height: 0%;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn-submit:hover::before {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    z-index: -1;
+}
+@media only screen and (min-width: 800px) {
+
+    .nav-list {
+        flex-direction: row;
+        transform: translateX(0%);
+        background-color: #0000;
+        backdrop-filter: none;
+        align-items: flex-start;
+        inset: auto;
+        font-size: inherit;
+        position: relative;
+        padding: 0;
+    }
+
+    .nav-element {
+        padding: 18px 32px;
+    }
+
+    .toggle-theme {
+        padding: 0;
+    }
+
+    #btn-theme .material-symbols-outlined {
+        font-size: 24px;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+    .form_fondo{
+        margin-left: 50px ;
+        width: 95%;
+    }
+    .form_box{
+        width: 0%;
+        height: 250px;
+        margin-top: 20px;
+    }
+    .paso_1 label{
+        display: block;
+        color: var(--color-texto);
+        font-family: "Montserrat", sans-serif;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+    
+
+}
+@media only screen and (min-width: 1200px) {
+
+    .title {
+        font-size: 12rem;
+    }
+    .form_fondo{
+        
+        margin-left: 50px ;
+        width: 95%;
+    }
+    .form_box{
+        width: 30%;
+        height: 250px;
+        margin-top: 20px;
+        margin-left: 30%;
+    }
+    .paso_1 label{
+        display: block;
+        color: var(--color-texto);
+        font-family: "Montserrat", sans-serif;
+        padding-top: 20px;
+        padding-bottom: 10px;   
+    }
+}
