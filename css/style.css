@@ -4,7 +4,7 @@
     --color-blur: rgba(256, 256, 256, 0.8);
     --color-texto: #252422ff;
     --color-acento: #eb5e28ff;
-    --img-contacto: url(img/contact-light.png);
+    --img-contacto: url(../img/contact-light.png);
     color-scheme: light;
 }
 
@@ -14,7 +14,7 @@
     --color-blur: rgba(0, 0, 0, 0.8);
     --color-texto: #fffcf2ff;
     --color-acento: #eb5e28ff;
-    --img-contacto: url(img/contact-dark.png);
+    --img-contacto: url(../img/contact-dark.png);
     color-scheme: dark;
 }
 
@@ -496,10 +496,6 @@ td{
         position: relative;
         padding: 0;
     }
-
-    .nav-element {
-        /* padding: 0; */
-    }
     
     .nav-element a{
         padding: 18px;
@@ -587,7 +583,7 @@ td{
     .team-container {
         width: 85%;
         flex-direction: row;
-        gap: 50px 100px;
+        gap: 50px;
     }
 
     .team-container .miembro {
