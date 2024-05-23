@@ -354,6 +354,29 @@ section button:hover::before{
 .btn-contact {
     background-color: var(--color-fondo);
     transform: rotate(10deg);
+    animation: btnWiggle 5s infinite;
+}
+
+@keyframes btnWiggle {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    2% {
+        transform: rotate(9deg);
+    }
+
+    3.5% {
+        transform: rotate(11deg);
+    }
+
+    5% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
 }
 
 table, td{
@@ -395,72 +418,6 @@ td{
 
 .icon:hover {
     fill: var(--color-acento);
-}
-
-/* @-webkit-keyframes btnWiggle {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    2% {
-        -webkit-transform: rotate(-1deg);
-    }
-
-    3.5% {
-        -webkit-transform: rotate(1deg);
-    }
-
-    5% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(0deg);
-    }
-}
-
-@-o-keyframes btnWiggle {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    2% {
-        -webkit-transform: rotate(-1deg);
-    }
-
-    3.5% {
-        -webkit-transform: rotate(1deg);
-    }
-
-    5% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(0deg);
-    }
-} */
-
-@keyframes btnWiggle {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    2% {
-        -webkit-transform: rotate(-1deg);
-    }
-
-    3.5% {
-        -webkit-transform: rotate(1deg);
-    }
-
-    5% {
-        -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(0deg);
-    }
 }
 
 @media only screen and (min-width: 800px) {
