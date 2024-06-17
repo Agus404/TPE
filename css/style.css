@@ -42,6 +42,11 @@ body {
     font-family: montserrat;
 }
 
+main{
+    min-height: 90vh;
+    padding-top: 50px;
+}
+
 a {
     color: inherit;
 }
@@ -83,6 +88,11 @@ ul {
     transition: transform 350ms ease-out;
 }
 
+.selected{
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
 .nav-open {
     transform: translateX(0%);
 }
@@ -100,6 +110,8 @@ ul {
 
 .toggle-theme {
     padding: 1em 0;
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 #btn-theme {
@@ -438,8 +450,8 @@ td{
         padding: 0;
     }
     
-    .nav-element a{
-        padding: 18px;
+    .nav-element{
+        padding: 18px 36px;
     }
 
     .toggle-theme {
