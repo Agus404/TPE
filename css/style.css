@@ -45,6 +45,7 @@ body {
 main{
     min-height: 90vh;
     padding-top: 50px;
+    background-color: var(--color-fondo);
 }
 
 a {
