@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function push(event) {
         let id = event.target.id;
         selectTab(id);
-        document.title=id;
         loadContent(id);
         window.history.pushState({id}, id, '/'+id);
     }
@@ -43,4 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
         selectTab(stateId);
         loadContent(stateId);
     });
+
+    selectTab("home");
+    loadContent("home");
 });
