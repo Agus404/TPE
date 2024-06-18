@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let id = event.target.id;
         selectTab(id);
         loadContent(id);
-        window.history.pushState({id}, id, '/'+id);
+        window.history.pushState({id}, id, '/TPE/'+id);
     }
 
     window.onload = (event) =>{
@@ -45,4 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     selectTab("home");
     loadContent("home");
+    window.history.pushState("home", "home", "/TPE/home");
 });
