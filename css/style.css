@@ -102,6 +102,7 @@ ul {
     padding: 1.13em;
     font-weight: 500;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .nav-element:hover {
@@ -314,7 +315,7 @@ section button{
     padding: 0;
     overflow: hidden;
     z-index: 0;
-
+    cursor: pointer;
 }
 
 section button::before{
@@ -409,6 +410,67 @@ table, tr, td{
 
 td{
     padding: 8px;
+}
+
+table .btn-eliminar{
+    display: none;
+    border: none;
+    background-color: var(--color-fondo);
+    font-size: 1.4rem;
+    width: auto;
+    height: auto;
+    color: crimson;
+}
+
+
+tr:hover .btn-eliminar{
+    display: table-cell;
+    transition: all 0.2s ease-out;
+    /* border: none; */
+}
+
+.btn-eliminar:hover::before{
+    height: 0%;
+    /* width: 100%; */
+    /* border-radius: 0; */
+    /* z-index: -1; */
+    /* background-color: var(--color-texto); */
+}
+
+.btn-eliminar:hover{
+    /* font-weight: 900; */
+    font-size: 1.6rem;
+}
+
+#form-service{
+    display: flex;
+    gap: 8px;
+    padding: 18px;
+}
+
+#service{
+    background-color: var(--color-fondo);
+    /* border: none; */
+    /* outline-color: var(--color-acento); */
+    color: var(--color-texto);
+    border: solid 3px var(--color-texto);
+    width: 500px;
+    height: 50px;
+    max-width: 90%;
+    font-size: 1rem;
+}
+
+.btn-services::before{
+    transition: all 0.3s ease-out;
+}
+
+#form-service .btn-services{
+    height: 50px;
+    width: 250px;
+    max-width: 90%;
+    font-size: 1rem;
+    background-color: var(--color-fondo2);
+    color: var(--color-texto);
 }
 
 .footer {

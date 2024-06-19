@@ -28,14 +28,14 @@ document.addEventListener('DOMContentLoaded', () => {
         let id = event.target.id;
         selectTab(id);
         loadContent(id);
-        window.history.pushState({id}, id, '/TPE/'+id);
+        window.history.pushState({id}, id, '/'+id);
     }
 
-    window.onload = (event) =>{
+    // window.onload = (event) =>{
         window["home"].addEventListener("click", (event) => push(event));
         window["about"].addEventListener("click", (event) => push(event));
         window["contact"].addEventListener("click", (event) => push(event));
-    };
+    // };
 
     window.addEventListener("popstate", (event) => {
         let stateId = event.state.id;
@@ -45,5 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     selectTab("home");
     loadContent("home");
-    window.history.pushState("home", "home", "/TPE/home");
+    window.history.pushState("home", "home", "/home");
 });
