@@ -38,4 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
             toggleIcon.setAttribute('data-open', false);
         }
     });
-})
+});
