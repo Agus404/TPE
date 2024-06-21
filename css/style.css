@@ -90,6 +90,7 @@ ul {
 }
 
 .selected{
+    /* background-color: var(--color-acento); */
     background-color: var(--color-texto);
     color: var(--color-fondo);
 }
@@ -106,7 +107,8 @@ ul {
 }
 
 .nav-element:hover {
-    background-color: var(--color-texto);
+    /* background-color: var(--color-texto); */
+    background-color: var(--color-acento);
     color: var(--color-fondo);
 }
 
@@ -413,7 +415,8 @@ td{
 }
 
 table .btn-eliminar{
-    display: none;
+    /* display: none; */
+    visibility: hidden;
     border: none;
     background-color: var(--color-fondo);
     font-size: 1.5rem;
@@ -424,7 +427,8 @@ table .btn-eliminar{
 
 
 tr:hover .btn-eliminar{
-    display: table-cell;
+    /* display: table-cell; */
+    visibility: visible;
     transition: all 0.2s ease-out;
     /* border: none; */
 }
@@ -438,8 +442,10 @@ tr:hover .btn-eliminar{
 }
 
 .btn-eliminar:hover{
-    /* font-weight: 900; */
-    font-size: 1.6rem;
+    /* font-weight: 800; */
+    /* font-size: 1.6rem; */
+    /* font-style: italic; */
+    color: var(--color-acento);
 }
 
 #form-service{
