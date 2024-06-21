@@ -414,7 +414,7 @@ td{
     padding: 8px;
 }
 
-table .btn-eliminar{
+table .btn-table{
     /* display: none; */
     visibility: hidden;
     border: none;
@@ -426,14 +426,14 @@ table .btn-eliminar{
 }
 
 
-tr:hover .btn-eliminar{
+tr:hover .btn-table{
     /* display: table-cell; */
     visibility: visible;
     transition: all 0.2s ease-out;
     /* border: none; */
 }
 
-.btn-eliminar:hover::before{
+.btn-table:hover::before{
     height: 0%;
     /* width: 100%; */
     /* border-radius: 0; */
@@ -441,7 +441,7 @@ tr:hover .btn-eliminar{
     /* background-color: var(--color-texto); */
 }
 
-.btn-eliminar:hover{
+.btn-table:hover{
     /* font-weight: 800; */
     /* font-size: 1.6rem; */
     /* font-style: italic; */
