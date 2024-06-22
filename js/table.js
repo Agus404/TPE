@@ -74,10 +74,10 @@ const objetosServicios = [{
 async function obtenerTabla() {
     const tabla = document.querySelector("#tabla-presupuesto");
     // tabla.innerHTML = `Cargando...`;
-    tabla.innerHTML = '';
     try {
         let response = await fetch(url);
         if (response.ok) {
+            tabla.innerHTML = ' ';
             let json = await response.json();
             let total = 0;
             for (const element of json) {
@@ -85,7 +85,7 @@ async function obtenerTabla() {
                 let categoria = element.categoria;
                 let costo = element.costo;
                 let id = element.id;
-                tabla.innerHTML += `<tr><td>${id}</td><td>${categoria}</td><td>${servicio}</td><td>$${costo}</td><td><button type="button" class="btn-eliminar btn-table" data-id="${id}">X</button>   <button type="button" class="btn-modificar btn-table" data-id="${id}">◄</button></td></tr>`
+                tabla.innerHTML += `<tr><td>${id}</td><td>${categoria}</td><td>${servicio}</td><td>$${costo}</td><td><button type="button" class="btn-eliminar btn-table" data-id="${id}">X</button><button type="button" class="btn-modificar btn-table" data-id="${id}">◄</button></td></tr>`
                 total += costo;
             }
             tabla.innerHTML += `<tr><td></td><td></td><td>TOTAL:  $${total}</td><td></td><td></td></tr>`;
@@ -134,18 +134,26 @@ async function agregarElemento(objeto) {
     }
 }
 
-async function agregarCategoria(cat) {
+function agregarCategoria(cat) {
     // let categoria = objeto.categoria;
-    alert(cat);
+    // alert(cat);
     // document.querySelectorAll(`.${categoria}`).forEach((item) => agregarElemento(obtenerObjeto(objetosServicios)));
 
-    for (const element of objetosServicios) {
-        alert(objetosServicios[element].servicio);
-        if (objetosServicios[element].categoria == cat) {
-            alert(objetosServicios[element].servicio);
-            agregarElemento(objetosServicios[element]);
+    // for (const element of objetosServicios) {
+    //     alert(objetosServicios[element].servicio);
+    //     if (objetosServicios[element].categoria == cat) {
+    //         alert(objetosServicios[element].servicio);
+    //         agregarElemento(objetosServicios[element]);
+    //     }
+    // }
+
+    for (let index = 0; index < objetosServicios.length; index++) {
+        const element = objetosServicios[index];
+        if (element.categoria==cat) {
+            agregarElemento(element);
         }
     }
+    obtenerTabla();
 }
 
 async function eliminarElemento(event) {

@@ -48,6 +48,11 @@ main{
     background-color: var(--color-fondo);
 }
 
+.loading{
+    font-size: 2rem;
+    padding: 18px;
+}
+
 a {
     color: inherit;
 }
@@ -419,6 +424,7 @@ table .btn-table{
     visibility: hidden;
     border: none;
     background-color: var(--color-fondo);
+    padding: 0 8px;
     font-size: 1.5rem;
     width: auto;
     height: auto;
