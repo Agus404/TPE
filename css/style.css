@@ -95,7 +95,6 @@ ul {
 }
 
 .selected{
-    /* background-color: var(--color-acento); */
     background-color: var(--color-texto);
     color: var(--color-fondo);
 }
@@ -112,7 +111,6 @@ ul {
 }
 
 .nav-element:hover {
-    /* background-color: var(--color-texto); */
     background-color: var(--color-acento);
     color: var(--color-fondo);
 }
@@ -410,7 +408,6 @@ table{
     width: 90%;
     font-size: 1rem;
     margin: 16px 0 50px;
-    /* min-height: 200px; */
 }
 
 td{
@@ -418,7 +415,6 @@ td{
 }
 
 table .btn-table{
-    /* display: none; */
     visibility: hidden;
     border: none;
     background-color: var(--color-fondo);
@@ -431,24 +427,15 @@ table .btn-table{
 
 
 tr:hover .btn-table{
-    /* display: table-cell; */
     visibility: visible;
     transition: all 0.2s ease-out;
-    /* border: none; */
 }
 
 .btn-table:hover::before{
     height: 0%;
-    /* width: 100%; */
-    /* border-radius: 0; */
-    /* z-index: -1; */
-    /* background-color: var(--color-texto); */
 }
 
 .btn-table:hover{
-    /* font-weight: 800; */
-    /* font-size: 1.6rem; */
-    /* font-style: italic; */
     color: var(--color-acento);
 }
 
@@ -458,19 +445,60 @@ tr:hover .btn-table{
     padding: 16px;
 }
 
+.tags{
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    
+}
+
+.tag{
+    background-color: var(--color-fondo2);
+    border-radius: 8px;
+    margin: 8px;
+    padding: 4px 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.tags .selected{
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+.tag:hover{
+    background-color: var(--color-acento);
+}
+
+.btn-pagination:hover{
+    color: var(--color-acento);
+}
+
+#reset-tags{
+    margin-left: 0px;
+}
+
+.hidden{
+    display: none;
+}
+
 #form-service{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 8px;
     padding: 18px;
+    width: 100%;
 }
 
 #service{
     background-color: var(--color-fondo);
-    /* border: none; */
-    /* outline-color: var(--color-acento); */
     color: var(--color-texto);
     border: solid 3px var(--color-texto);
     width: 500px;
+    max-width: 90%;
     height: 50px;
     max-width: 90%;
     font-size: 1rem;
@@ -482,8 +510,7 @@ tr:hover .btn-table{
 
 #form-service .btn-services{
     height: 50px;
-    width: 250px;
-    max-width: 90%;
+    width: 90%;
     font-size: 1rem;
     background-color: var(--color-fondo2);
     color: var(--color-texto);
@@ -581,6 +608,14 @@ tr:hover .btn-table{
 
     table{
         font-size: 25px;
+    }
+
+    #form-service{
+        flex-direction: row;
+    }
+
+    #form-service .btn-services{
+        max-width: 250px;
     }
 
     /* PROYECTOS */

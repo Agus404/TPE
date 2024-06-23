@@ -23,71 +23,40 @@
         <form action="" id="form-service">
             <select name="service" id="service">
 
-                <option value="">-- Elegir opción --</option> <!-- ELIMINAR? -->
-                <!-- <hr/> -->
+                <option value="">-- Elegir opción --</option>
                 <optgroup label="Estrategia">
                     <option class="Estrategia" value="Estrategia de marca">Estrategia de marca</option>
                     <option class="Estrategia" value="Estrategia de producto">Estrategia de producto</option>
                     <option class="Estrategia" value="Estrategias de contenido">Estrategias de contenido</option>
                     <option class="Estrategia" value="Investigacion y análisis">Investigacion y análisis</option>
                 </optgroup>
-                <!-- <hr/> -->
                 <optgroup label="Branding">
                     <option class="Branding" value="Identidad de marca">Identidad de marca</option>
                     <option class="Branding" value="Narrativa de marca">Narrativa de marca</option>
                     <option class="Branding" value="Dirección creativa">Dirección creativa</option>
                     <option class="Branding" value="Identidad audiovisual">Identidad audiovisual</option>
-                    <option class="Branding" value="Marketing y campañas publicitarias">Marketing y campañas publicitarias</option>
-                    <!-- <option class="branding" value="">Experiencia de la marca digital</option> -->
-                    <!-- <option class="branding" value="">Campañas publicitarias</option> -->
+                    <option class="Branding" value="Campañas publicitarias">Campañas publicitarias</option>
                 </optgroup>
-                <!-- <hr/> -->
                 <optgroup label="Digital">
                     <option class="Digital" value="Productos digitales">Productos digitales</option>
                     <option class="Digital" value="Posicionamiento digital">Posicionamiento digital</option>
-                    <!-- <option class="digital" value="">Diseño de producto</option> -->
-                    <!-- <option class="digital" value="">Diseño de sistemas</option> -->
                     <option class="Digital" value="Diseño UI/UX">Diseño UI/UX</option>
-                    <!-- <option class="digital" value="">Interfaz de usuario</option> -->
                     <option class="Digital" value="Desarrollo web">Desarrollo web</option>
                     <option class="Digital" value="Desarrollo de aplicaciones">Desarrollo de aplicaciones</option>
                 </optgroup>
             </select>
             <button type="button" id="btn-agregar" class="btn-services">Agregar servicio</button>
             <button type="button" id="btn-agregar-categoria" class="btn-services">Agregar toda la categoría</button>
-            <button type="button" id="btn-eliminar-todo" class="btn-services" data-id="">Borrar todo</button>
         </form>
         <div id="total"></div>
+        <div class="tags">
+            <div class="tag" data-filter="estrategia">estrategia</div>
+            <div class="tag" data-filter="branding">branding</div>
+            <div class="tag" data-filter="digital">digital</div>
+            <div class="tag hidden" id="reset-tags" data-filter=" ">x</div>
+        </div>
         <table>
             <tbody id="tabla-presupuesto">
-            <!-- <tr>
-                <td>01</td>
-                <td>Estrategia</td>
-                <td>Estrategia de marca, estrategia de producto, posicionamiento, arquitectura de marca, investigación y análisis</td>
-                <td><button type="button" class="btn-eliminar">X</button></td>
-                <td><button type="button" class="btn-eliminar">◄</button></td>
-            </tr>
-            <tr>
-                <td>02</td>
-                <td>Branding</td>
-                <td>Identidad de marca, narrativa de marca, dirección creativa, identidad audiovisual, marketing, experiencia de la marca digital</td>
-                <td><button type="button" class="btn-eliminar">X</button></td>
-                <td><button type="button" class="btn-eliminar">◄</button></td>
-            </tr>
-            <tr>
-                <td>03</td>
-                <td>Digital</td>
-                <td>Productos digitales, diseño de producto, diseño de sistemas, experiencia de usuario e interfaz de usuario, desarrollo web y de aplicaciones</td>
-                <td><button type="button" class="btn-eliminar">X</button></td>
-                <td><button type="button" class="btn-eliminar">◄</button></td>
-            </tr>
-            <tr>
-                <td>04</td>
-                <td>Comunicación</td>
-                <td>Estrategias de contenido, dirección creativa, posicionamiento digital, campañas publicitarias</td>
-                <td><button type="button" class="btn-eliminar">X</button></td>
-                <td><button type="button" class="btn-eliminar">◄</button></td>
-            </tr> -->
             </tbody>
         </table>
     </section>
