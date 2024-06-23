@@ -75,10 +75,10 @@ async function obtenerTabla() {
     const tabla = document.querySelector("#tabla-presupuesto");
     // tabla.innerHTML = `Cargando...`;
     try {
-        let response = await fetch(url);
-        if (response.ok) {
+        let res = await fetch(url);
+        if (res.ok) {
             tabla.innerHTML = ' ';
-            let json = await response.json();
+            let json = await res.json();
             let total = 0;
             for (const element of json) {
                 let servicio = element.servicio;
@@ -171,6 +171,7 @@ async function agregarCategoria(cat) {
 
 async function eliminarElemento(event) {
     let id = event.target.getAttribute("data-id");
+    alert(id);
     try {
         let res = await fetch(`${url}/${id}`, {
             'method': 'DELETE',
