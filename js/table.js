@@ -88,7 +88,8 @@ async function obtenerTabla() {
                 tabla.innerHTML += `<tr><td>${id}</td><td>${categoria}</td><td>${servicio}</td><td>$${costo}</td><td><button type="button" class="btn-eliminar btn-table" data-id="${id}">X</button><button type="button" class="btn-modificar btn-table" data-id="${id}">◄</button></td></tr>`
                 total += costo;
             }
-            tabla.innerHTML += `<tr><td></td><td></td><td>TOTAL:  $${total}</td><td></td><td></td></tr>`;
+            // tabla.innerHTML += `<tr><td></td><td></td><td></td><td>TOTAL:  $${total}</td><td></td></tr>`;
+            document.querySelector("#total").innerHTML=`TOTAL: $${total}`;
             let btnEliminar = document.querySelectorAll(".btn-eliminar");
             btnEliminar.forEach(btn => { btn.addEventListener("click", eliminarElemento); });
             let btnModificar = document.querySelectorAll(".btn-modificar");
@@ -134,7 +135,7 @@ async function agregarElemento(objeto) {
     }
 }
 
-function agregarCategoria(cat) {
+async function agregarCategoria(cat) {
     // let categoria = objeto.categoria;
     // alert(cat);
     // document.querySelectorAll(`.${categoria}`).forEach((item) => agregarElemento(obtenerObjeto(objetosServicios)));
@@ -150,10 +151,22 @@ function agregarCategoria(cat) {
     for (let index = 0; index < objetosServicios.length; index++) {
         const element = objetosServicios[index];
         if (element.categoria==cat) {
-            agregarElemento(element);
+            await agregarElemento(element);
+            // try {
+            //     let res = await fetch(url, {
+            //        'method': 'POST',
+            //         'headers': { 'Content-Type': 'application/json' },
+            //         'body': JSON.stringify(element) 
+            //     });
+            //     if (res.status == 201) {
+            //         console.log(`Agregado ${element.servicio}`);
+            //     }
+            // } catch (error) {
+            //     console.log(error);
+            // }
         }
     }
-    obtenerTabla();
+    // obtenerTabla();
 }
 
 async function eliminarElemento(event) {

@@ -242,6 +242,7 @@ article img {
     overflow-x: hidden;
     padding-top: 50px;
     position: relative;
+    min-height: 50vh;
 }
 
 .proyectos-title {
@@ -408,11 +409,11 @@ table, td{
 table{
     width: 90%;
     font-size: 1rem;
-    margin: 50px 0;
+    margin: 16px 0 50px;
+    /* min-height: 200px; */
 }
 
 table, tr, td{
-    min-height: 200px;
 }
 
 td{
@@ -452,6 +453,12 @@ tr:hover .btn-table{
     /* font-size: 1.6rem; */
     /* font-style: italic; */
     color: var(--color-acento);
+}
+
+#total{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 16px;
 }
 
 #form-service{
